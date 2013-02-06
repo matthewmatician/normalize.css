@@ -10,10 +10,12 @@ normalize.css v2.0.1 | MIT License | git.io/normalize
     Base.................Basic Elements
     Links................Links
     Headers..............H1 through H6, plus p's
-    Embedded.............Embedded content, like images, video, etc
+    TextElements.........Inline items like strong, em, sup, sub, etc
+    Tables...............Tables
     Figures..............Figures
     Forms................Forms and all their insanities
-    Tables...............Tables
+    Code.................code and pre tags
+    Embedded.............Embedded content, like images, video, etc
 */
 
 // #Backward ////////////////////////////////////////////////////////////////////////////////
@@ -118,6 +120,21 @@ b, strong {
     bottom: -0.25em;
 }/* */
 
+// #Tables ////////////////////////////////////////////////////////////////////////////////
+
+// Remove most spacing between table cells.
+/* table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}/* */
+
+// #Figures ////////////////////////////////////////////////////////////////////////////////
+
+// Addresses margin not present in IE 8/9 and Safari 5.
+/*figure {
+    margin: 0;
+}/* */
+
 // #Code //////////////////////////////////////////////////////////////////////////////////
 // Corrects font family set oddly in Safari 5 and Chrome.
 /*code, kbd, pre, samp {
@@ -143,14 +160,6 @@ img {
 // Corrects overflow displayed oddly in IE 9.
 /*svg:not(:root) {
     overflow: hidden;
-}/* */
-
-
-// #Figures ////////////////////////////////////////////////////////////////////////////////
-
-// Addresses margin not present in IE 8/9 and Safari 5.
-/*figure {
-    margin: 0;
 }/* */
 
 
@@ -236,11 +245,3 @@ input::-moz-focus-inner {
 //   vertical-align: top; /* 2 */
 //}/* */
 
-
-// #Tables ////////////////////////////////////////////////////////////////////////////////
-
-// Remove most spacing between table cells.
-/* table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}/* */
